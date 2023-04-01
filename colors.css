@@ -1,0 +1,54 @@
+:root {
+	--red: #C21A08;
+	--dark-red: #7d2016;
+	
+	--green: #295652;
+	--dark-green: #1E312C;
+	
+	--yellow: #E78844;
+	--light-yellow: #FAD991;
+	
+	--blue: #092E65;
+	--light-blue: #0A5FA7;
+	--dark-blue: #09122E;
+
+	--white: #F9F5D9;
+	--light-gray: #a4a291;
+	--black: #161D1A;
+	--gray: #454440;
+	--dark-black: #0A080C;
+
+	--brown: #3D1D14;
+	--dark-brown: #27130E;
+	--light-brown: #6B2C1E;
+
+	--cyan: #3CA1A8;
+
+	--primary: var(--blue);
+	--light: var(--white);
+	--dark: var(--black);
+	--danger: var(--red);
+	--success: var(--green);
+	--warning: var(--yellow);
+}
+
+.bg-primary { background: var(--primary) }
+.bg-dark { background: var(--dark) }
+.bg-light { background: var(--light) }
+.bg-danger { background: var(--danger) }
+.bg-success { background: var(--success) }
+.bg-warning { background: var(--warning) }
+.bg-dark-red { background: var(--dark-red) }
+
+.text-primary { color: var(--primary) }
+.text-dark { color: var(--dark) }
+.text-light { color: var(--light) }
+.text-muted { color: var(--light-muted) }
+.text-danger { color: var(--danger) }
+.text-success { color: var(--success) }
+.text-warning { color: var(--warning) }
+.text-light-gray { color: var(--light-gray) }
+
+.gradient-primary {
+	background-image: linear-gradient(120deg, var(--primary), var(--dark-green));
+}
