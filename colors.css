@@ -38,7 +38,12 @@
 .bg-danger { background: var(--danger) }
 .bg-success { background: var(--success) }
 .bg-warning { background: var(--warning) }
+
 .bg-dark-red { background: var(--dark-red) }
+.bg-cyan { background: var(--cyan) }
+.bg-light-blue { background: var(--light-blue) }
+.bg-light-gray { background: var(--light-gray) }
+.bg-brown { background: var(--brown) }
 
 .text-primary { color: var(--primary) }
 .text-dark { color: var(--dark) }

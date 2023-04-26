@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="colors.css">
+
+
+	<style>
+		html, body {
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			background: black
+		}
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 80vh;
+		}
+		main {
+			/* background: white; */
+			width: 350px;
+			height: 350px;
+			display: flex;
+			align-items: center;
+			justify-content: start;
+			flex-wrap: wrap;
+			padding: 70px;
+			/* position: relative; */
+		}
+		figure {
+			padding-top: 2px;
+			padding-bottom: 2px;
+			height: 35px;
+			border-radius: 20px;
+			margin: 12px;
+		}
+
+		.w-1 { width: 90px }
+		.w-2 { width: 110px }
+		.w-3 { width: 130px }
+		.w-4 { width: 150px }
+		.w-5 { width: 190px }
+	</style>
+</head>
+<body>
+	<main class="bg-light">
+		<figure class="bg-danger w-1"></figure>
+		<figure class="bg-light-blue w-3"></figure>
+		<figure class="bg-cyan w-4"></figure>
+		<figure class="bg-primary w-2"></figure>
+		<figure class="bg-light-blue w-1"></figure>
+		<figure class="bg-dark-red w-5"></figure>
+		<figure class="bg-primary w-2"></figure>
+		<figure class="bg-danger w-3"></figure>
+		<figure class="bg-cyan w-4"></figure>
+		<figure class="bg-primary w-2"></figure>
+	</main>
+</body>
+</html>
