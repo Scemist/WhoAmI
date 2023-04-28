@@ -6,21 +6,86 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 
-	<link rel="stylesheet" href="colors.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+	<!-- <link rel="stylesheet" href="colors.css"> -->
 
 
 	<style>
+		:root {
+	--red: #C21A08;
+	--dark-red: #7d2016;
+	
+	--green: #295652;
+	--dark-green: #1E312C;
+	
+	--yellow: #E78844;
+	--light-yellow: #FAD991;
+	
+	--blue: #092E65;
+	--light-blue: #0A5FA7;
+	--dark-blue: #09122E;
+
+	--white: #F9F5D9;
+	--light-gray: #98957a;
+	--black: #161D1A;
+	--gray: #454440;
+	--dark-black: #0A080C;
+
+	--brown: #3D1D14;
+	--dark-brown: #27130E;
+	--light-brown: #6B2C1E;
+
+	--cyan: #3CA1A8;
+
+	--primary: var(--blue);
+	--light: var(--white);
+	--dark: var(--black);
+	--danger: var(--red);
+	--success: var(--green);
+	--warning: var(--yellow);
+}
+
+.bg-primary { background: var(--primary) }
+.bg-dark { background: var(--dark) }
+.bg-light { background: var(--light) }
+.bg-danger { background: var(--danger) }
+.bg-success { background: var(--success) }
+.bg-warning { background: var(--warning) }
+
+.bg-dark-red { background: var(--dark-red) }
+.bg-cyan { background: var(--cyan) }
+.bg-light-blue { background: var(--light-blue) }
+.bg-light-gray { background: var(--light-gray) }
+.bg-brown { background: var(--brown) }
+.bg-gray { background: var(--gray) }
+
+
+.text-primary { color: var(--primary) }
+.text-dark { color: var(--dark) }
+.text-light { color: var(--light) }
+.text-muted { color: var(--light-muted) }
+.text-danger { color: var(--danger) }
+.text-success { color: var(--success) }
+.text-warning { color: var(--warning) }
+.text-light-gray { color: var(--light-gray) }
+
+.gradient-primary {
+	background-image: linear-gradient(120deg, var(--primary), var(--dark-green));
+}
+
 		html, body {
 			padding: 0;
 			margin: 0;
 			text-align: center;
-			background: black
+			background: #00ff00
 		}
 		body {
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			height: 80vh;
+			padding-top: 50px;
 		}
 		main {
 			/* background: white; */
@@ -31,35 +96,36 @@
 			justify-content: start;
 			flex-wrap: wrap;
 			padding: 70px;
+			border-radius: 100px;
 			/* position: relative; */
 		}
 		figure {
 			padding-top: 2px;
 			padding-bottom: 2px;
-			height: 35px;
-			border-radius: 20px;
+			height: 55px;
+			border-radius: 50px;
 			margin: 12px;
 		}
 
-		.w-1 { width: 90px }
-		.w-2 { width: 110px }
-		.w-3 { width: 130px }
-		.w-4 { width: 150px }
-		.w-5 { width: 190px }
+		.w-1 { width: 100px }
+		.w-2 { width: 116px }
+		.w-3 { width: 139px }
+		.w-4 { width: 165px }
+		.w-5 { width: 200px }
 	</style>
 </head>
 <body>
 	<main class="bg-light">
-		<figure class="bg-danger w-1"></figure>
-		<figure class="bg-light-blue w-3"></figure>
-		<figure class="bg-cyan w-4"></figure>
-		<figure class="bg-primary w-2"></figure>
-		<figure class="bg-light-blue w-1"></figure>
-		<figure class="bg-dark-red w-5"></figure>
-		<figure class="bg-primary w-2"></figure>
+		<figure class="bg-gray w-1"></figure>
 		<figure class="bg-danger w-3"></figure>
 		<figure class="bg-cyan w-4"></figure>
 		<figure class="bg-primary w-2"></figure>
+		<figure class="bg-danger w-1"></figure>
+		<figure class="bg-gray w-5"></figure>
+		<figure class="bg-primary w-2"></figure>
+		<figure class="bg-cyan w-3"></figure>
+		<!-- <figure class="bg-cyan w-4"></figure> -->
+		<!-- <figure class="bg-primary w-2"></figure> -->
 	</main>
 </body>
 </html>

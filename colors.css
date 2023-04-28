@@ -44,6 +44,7 @@
 .bg-light-blue { background: var(--light-blue) }
 .bg-light-gray { background: var(--light-gray) }
 .bg-brown { background: var(--brown) }
+.bg-gray { background: var(--gray) }
 
 .text-primary { color: var(--primary) }
 .text-dark { color: var(--dark) }
