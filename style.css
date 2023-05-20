@@ -174,3 +174,14 @@ section {
 .text-center {
 	text-align: center;
 }
+.present {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.photo {
+	height: 300px;
+	/* margin: 0 auto; */
+	/* margin-right: 3rem; */
+}
