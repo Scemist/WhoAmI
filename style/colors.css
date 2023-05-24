@@ -42,8 +42,10 @@
 .bg-dark-red { background: var(--dark-red) }
 .bg-cyan { background: var(--cyan) }
 .bg-light-blue { background: var(--light-blue) }
+.bg-dark-blue { background: var(--dark-blue) }
 .bg-light-gray { background: var(--light-gray) }
 .bg-brown { background: var(--brown) }
+.bg-black { background: var(--dark-black) }
 .bg-gray { background: var(--gray) }
 
 .text-primary { color: var(--primary) }
