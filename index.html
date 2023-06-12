@@ -21,40 +21,39 @@
 
 	<link rel="stylesheet" href="style/colors.css">
 	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/effects.css">
 </head>
 
 <body class="gradient-primary p-3">
 	<main class="bg-light mx-auto card text-dark">
 		<header class="flex align-items-center justify-content-between">
-			<h2 class="brand mobile-hidden">Scemist</h4>
+			<h2 class="brand mobile-hidden">Scemist</h2>
 
-				<ul class="fs-4 flex mx-auto">
-					<li>
-						<a href="https://github.com/Scemist">
-							<i class="bi-github"></i>
-							<span class="mobile-hidden">github.com/Scemist</span>
-						</a>
-					</li>
-					<li>
-						<a href="mailto:scemist.lucas@gmail.com">
-							<i class="bi-envelope-fill"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/scemist">
-							<i class="bi-linkedin"></i>
-						</a>
-					</li>
-				</ul>
+			<ul class="fs-4 flex mx-auto">
+				<li>
+					<a href="https://github.com/Scemist">
+						<i class="bi-github"></i>
+						<span class="mobile-hidden">github.com/Scemist</span>
+					</a>
+				</li>
+				<li>
+					<a href="mailto:scemist.lucas@gmail.com">
+						<i class="bi-envelope-fill"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/scemist">
+						<i class="bi-linkedin"></i>
+					</a>
+				</li>
+			</ul>
 
-				<ul class="mobile-hidden">
-					<li>
-						<a><i class="bi-easel-fill"></i>Projetos</a>
-					</li>
-				</ul>
+			<ul class="mobile-hidden">
+				<li>
+					<a><i class="bi-easel-fill"></i>Projetos</a>
+				</li>
+			</ul>
 		</header>
-
-
 
 		<section class="mt-sm-0 container mx-auto present">
 			<div class="mb-3">
@@ -62,14 +61,14 @@
 					Lucas Gonçalves <i class="bi-dot mx-0 mobile-hidden table-show"></i> Scemist
 				</h1>
 
-				<h3 class="title">
+				<h3 class="title to-type">
 					DESENVOLVEDOR DE SISTEMAS <strong>WEB</strong>
 				</h3>
 
 				<hr>
 
 				<div class="flex justify-content-between align-items-center">
-					<p class="block me-1">
+					<p class="block me-1 text-gray">
 						Olá, tenho 19 anos e sou entusiasta nas maneiras de abstrair e facilitar a vida com código e tecnologia.
 					</p>
 				</div>
@@ -127,6 +126,44 @@
 		</section>
 
 		<section class="bg-dark-blue text-light">
+			<div class="container mx-auto">
+				<h1 class="display">Linguagens</h1>
+			</div>
+
+			<section class="flex flex-wrap mx-auto justify-content-center">
+				<div>
+					<legend class="code-box-legend">PHP</legend>
+					<figure class="code-box text-light">
+						<pre>&lt;?php
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;$fn = fn ($msg) => print($msg);
+							
+							&nbsp;&nbsp;&nbsp;&nbsp;$fn('<span class="text-light">Minha linguagem nativa, sempre nas últimas versões e pregando os bons modos.</span>');</pre>
+					</figure>
+				</div>
+
+				<div>
+					<legend class="code-box-legend">JavaScript</legend>
+					<figure class="code-box text-light">
+						<pre>const fn = $msg => console.log($msg)
+							
+							fn('<span class="text-light">Como fundamental para um site, conhecimento das novas sintaxes e Design Patters principais.</span>')</pre>
+					</figure>
+				</div>
+				<div>
+
+					<legend class="code-box-legend">Python</legend>
+					<figure class="code-box text-light">
+						<pre>def fn(msg):
+							&nbsp;&nbsp;&nbsp;&nbsp;print(msg)
+							
+							fn('<span class="text-light">Linguagem e arte linguística, vem ganhando espaço em meus repositórios.</span>')</pre>
+					</figure>
+				</div>
+			</section>
+		</section>
+
+		<section class="projects text-light mt-0">
 			<div class="container mx-auto">
 				<h1 class="display">Projetos</h1>
 			</div>

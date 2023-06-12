@@ -22,7 +22,7 @@ h6 { font-size: 0.5 }
 	}
 
 	.title {
-		letter-spacing: 0.3em !important;
+		letter-spacing: 0.2em !important;
 	}
 
 	.dot {
@@ -113,6 +113,9 @@ li {
 .display {
 	font-weight: 300;
 	font-size: 2.5rem;
+	padding: 0 4rem 0.7em 1rem;
+	display: inline-block;
+	border-bottom: 2px solid;
 }
 
 a {
@@ -153,7 +156,6 @@ main {
 }
 
 a:hover  {
-	/* background: rgba(var(--dark), 50%); */
 	background: var(--yellow);
 	border-radius: 4px;
 }
@@ -186,26 +188,53 @@ section {
 
 .photo {
 	height: 280px;
-	/* margin: 0 auto; */
-	/* margin-right: 3rem; */
 }
 
 /* Project */
 
+.projects {
+	background-color: var(--black);
+}
+
 .project-image {
 	max-height: 250px;
 	max-width: 100%;
-	/* margin: 1rem 1rem 0.1rem 1rem; */
-	/* border-top: 1rem solid var(--white);
-	border-bottom: 1rem solid var(--white);
-	border-left: 1.5rem solid var(--white);
-	border-right: 1.5rem solid var(--white); */
-	/* border: 3px solid var(--white); */
-	box-shadow: 0px 5px 15px var(--dark-black);
+	border-radius: 4px;
+	box-shadow: 0px 5px 10px var(--dark-black);
+}
+
+@keyframes show-image {
+	to {
+		transform: scale(110%);
+		position: relative;
+		z-index: 4;
+		filter: brightness(0.2);
+	}
+}
+
+@keyframes show-legend {
+	to {
+		visibility: unset;
+		z-index: 5;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.image-container:hover .project-image {
+	animation-name: show-image;
+	animation-duration: 150ms;
+	animation-fill-mode: forwards;
+}
+.image-container:hover legend {
+	animation-name: show-legend;
+	animation-duration: 150ms;
+	animation-fill-mode: forwards;
 }
 
 .gap-2 {
-	gap: 1rem 1.5rem;
+	gap: 1.5rem 2rem;
 }
 
 .image-container {
@@ -214,13 +243,11 @@ section {
 }
 
 .image-container > legend {
-	display: none;
-	/* position: absolute;
-	bottom: 1rem;
-	right: 1rem;
-	background-color: #09122eee;
-	padding: 0.3rem 0.8rem;
-	padding-right: 2rem;
-	border-top-left-radius: 0.6rem;
-	border-bottom-left-radius: 0.6rem; */
+	font-size: 2rem;
+	position: absolute;
+	display: inline-block;
+	visibility: hidden;
+	left: 50%;
+	top: 1rem;
+	transform: translate(-50%, -50%);
 }

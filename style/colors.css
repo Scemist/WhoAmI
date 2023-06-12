@@ -50,6 +50,7 @@
 
 .text-primary { color: var(--primary) }
 .text-dark { color: var(--dark) }
+.text-gray { color: var(--gray) }
 .text-light { color: var(--light) }
 .text-muted { color: var(--light-muted) }
 .text-danger { color: var(--danger) }
